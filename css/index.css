@@ -359,9 +359,19 @@ header.contact h1{
     border-bottom: 1px dashed lightslategray;
     padding: 25px;
     margin: 10px 0px 25px;
-
+    display: flex;
+    justify-content: space-between;
+}
+.main.contact div{
+    width: 45%;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 15px;
 }
 .main.contact label{
     display: block;
     padding: 20px 0 5px;
+}
+.main.contact #comm{
+    height: 50px;
 }
