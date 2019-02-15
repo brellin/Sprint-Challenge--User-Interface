@@ -282,13 +282,35 @@ header.about-page{
     margin-top: 15px;
 }
 div.main{
-    padding: 0px 20px;
+    padding: 0px;
 }
 .about-main-top{
-    padding: 25px 0;
+    padding: 25px;
     border-bottom: 1px dashed gray;
 }
 .about-main-mid{
+    padding: 25px;
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.about-main-mid div{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 350px;
+    padding: 15px 0px;
+    margin: 15px 10px;
+    border-bottom: 1px dashed gray;
+}
+.about-main-mid div h2{
+    margin-top: 5px;
+}
+.about-main-mid div a{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 5px;
+    color: black;
 }
