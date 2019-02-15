@@ -273,3 +273,8 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* About Page Specific */
+header.about-page{
+    background-image: url(../img/jumbo-about.png)
+}
