@@ -46,18 +46,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Button Animation */
 @keyframes button{
     to{
         padding: 2px;
         margin: 8px 23px;
     }
 }
+
+/* Media Query for Small Screens */
 @media only screen and (max-width: 600px){
     .about-main-mid{
         flex-flow: column;
-        flex-wrap: nowrap;
+    }
+    .top-content{
+        flex-flow: column;
+    }
+    .bottom-content{
+        flex-flow: column;
     }
 }
+
+/* Main */
 * {
     box-sizing: border-box;
 }
