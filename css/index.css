@@ -52,6 +52,12 @@ table {
         margin: 8px 23px;
     }
 }
+@media only screen and (max-width: 600px){
+    .about-main-mid{
+        flex-flow: column;
+        flex-wrap: nowrap;
+    }
+}
 * {
     box-sizing: border-box;
 }
