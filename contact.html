@@ -28,20 +28,30 @@
         <div class="main contact">
             <div>
                 <h2>Feel Free to Use Our Form Below:</h2>
-                <form>
+                <form action="#">
                     <label for="first">First Name</label>
-                    <input type="text">
+                    <input type="text" placeholder="Your first name">
                     <label for="last">Last Name</label>
-                    <input type="text">
+                    <input type="text" placeholder="Your last name">
                     <label for="comm">Topic</label>
-                    <input type="text">
+                    <input type="text" placeholder="Topic at hand">
                     <label for="comm">Comment</label>
-                    <input type="text" id="comm">
+                    <textarea name="comm" id="comm" cols="30" rows="10" placeholder="Your comment"></textarea>
+                    <input type="submit" value="Submit">
                 </form>
             </div>
             <div>
                 <h2>Or Contact Us Via:</h2>
-                <a href="mailto:webmaster@something.com">E-mail</a>
+                <p>
+                    E-mail: <a href="mailto:webmaster@something.com">webmaster@something.com</a>
+                    Phone: <a href="tel:+11234567890">(123) 456-7890</a>
+                </p>
+                <p>
+                    Address:
+                    <address>
+                        123 Some Road
+                    </address>
+                </p>
             </div>
         </div>
         <footer>
