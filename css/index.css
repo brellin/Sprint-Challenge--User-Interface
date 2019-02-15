@@ -276,5 +276,19 @@ footer nav a {
 
 /* About Page Specific */
 header.about-page{
-    background-image: url(../img/jumbo-about.png)
+    background-image: url(../img/jumbo-about.png);
+    height: 153px;
+    width: 800px;
+    margin-top: 15px;
+}
+div.main{
+    padding: 0px 20px;
+}
+.about-main-top{
+    padding: 25px 0;
+    border-bottom: 1px dashed gray;
+}
+.about-main-mid{
+    display: flex;
+    flex-flow: row;
 }
