@@ -348,6 +348,7 @@ header.contact{
     background-image: linear-gradient(-10deg, lightslategrey, lightcyan);
     text-align: center;
     border-radius: 50%;
+    box-shadow: 20px 10px 20px grey;
 }
 header.contact h1{
     font-size: 80px;
@@ -358,7 +359,7 @@ header.contact h1{
     border-top: 1px dashed lightslategray;
     border-bottom: 1px dashed lightslategray;
     padding: 25px;
-    margin: 10px 0px 25px;
+    margin: 25px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -368,6 +369,7 @@ header.contact h1{
     border-radius: 10px;
     padding: 15px;
     white-space: pre-line;
+    box-shadow: 20px 10px 20px grey;
 }
 .main.contact textarea{
     margin: 5px 15px 0 0;
@@ -381,7 +383,7 @@ header.contact h1{
     margin: 5px 15px 0 0;
     padding: 5px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px 10px;
     box-sizing: border-box;
 }
 .main.contact #comm{
@@ -390,4 +392,18 @@ header.contact h1{
 }
 input, textarea{
     box-shadow: 5px 7px 8px slategray;
+}
+div p a{
+    color: slateblue;
+}
+address{
+    line-height: 1.25;
+    margin-left: 75px;
+    background-color: slategray;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    border-radius: 5%;
+    box-shadow: 5px 10px 10px rgb(53, 53, 53);
+    text-shadow: 1px 1px 1px rgb(53, 53, 53);
 }
