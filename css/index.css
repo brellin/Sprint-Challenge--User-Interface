@@ -54,9 +54,24 @@ table {
         margin: 8px 23px;
     }
 }
+@keyframes nav{
+    to{
+        text-shadow: 2px 2px 1px gray;
+    }
+}
 
 /* Media Query for Small Screens */
 @media only screen and (max-width: 600px){
+    div.container{
+        width: 100%;
+    }
+    .top-content div.text-container{
+        width: 100%;
+    }
+    .nav-top{
+        flex-direction: column;
+        align-items: center;
+    }
     .about-main-mid{
         flex-flow: column;
     }
@@ -66,9 +81,12 @@ table {
     .bottom-content{
         flex-flow: column;
     }
+    .bottom-content div.text-container{
+        margin: 10px 0;
+    }
 }
 
-/* Main */
+/* Low Specificity */
 * {
     box-sizing: border-box;
 }
@@ -95,7 +113,6 @@ p {
 
 /* Navigation & Header */
 .nav-top{
-    height: 80px;
     display: flex;
     align-content: space-between;
     padding: 15px 0px;
@@ -111,10 +128,13 @@ p {
     text-decoration: none;
     font-size: 14px;
 }
+.nav-top a:hover{
+    animation: nav .5s linear 1 forwards;
+}
 header.main{
     background-image: url(../img/jumbo.jpg);
     height: 153px;
-    width: 800px;
+    width: 100%;
     margin: 20px 0px;
 }
 
@@ -150,20 +170,9 @@ header.main{
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Box Coloring */
 .middle-content .boxes .box1 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: teal;
     margin: 20px 2.5%;
@@ -173,7 +182,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box2 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: gold;
     margin: 20px 2.5%;
@@ -183,7 +192,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box3 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: cadetblue;
     margin: 20px 2.5%;
@@ -193,7 +202,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box4 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: coral;
     margin: 20px 2.5%;
@@ -203,7 +212,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box5 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: crimson;
     margin: 20px 2.5%;
@@ -213,7 +222,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box6 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: forestgreen;
     margin: 20px 2.5%;
@@ -223,7 +232,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box7 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: darkorchid;
     margin: 20px 2.5%;
@@ -233,7 +242,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box8 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: hotpink;
     margin: 20px 2.5%;
@@ -243,7 +252,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box9 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: indigo;
     margin: 20px 2.5%;
@@ -253,7 +262,7 @@ header.main{
     justify-content: center;
 }
 .middle-content .boxes .box10 {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: dodgerblue;
     margin: 20px 2.5%;
@@ -300,7 +309,7 @@ footer nav a {
 header.about-page{
     background-image: url(../img/jumbo-about.png);
     height: 153px;
-    width: 800px;
+    width: 100%;
     margin-top: 15px;
 }
 div.main{
