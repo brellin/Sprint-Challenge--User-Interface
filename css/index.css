@@ -47,6 +47,46 @@ table {
 	border-spacing: 0;
 }
 
+/* Button Animation */
+@keyframes button{
+    to{
+        padding: 2px;
+        margin: 8px 23px;
+    }
+}
+@keyframes nav{
+    to{
+        text-shadow: 2px 2px 1px gray;
+    }
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 600px){
+    div.container{
+        width: 100%;
+    }
+    .top-content div.text-container{
+        width: 100%;
+    }
+    .nav-top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-main-mid{
+        flex-flow: column;
+    }
+    .top-content{
+        flex-flow: column;
+    }
+    .bottom-content{
+        flex-flow: column;
+    }
+    .bottom-content div.text-container{
+        margin: 10px 0;
+    }
+}
+
+/* Low Specificity */
 * {
     box-sizing: border-box;
 }
@@ -71,6 +111,34 @@ p {
     margin: 0 auto;
 }
 
+/* Navigation & Header */
+.nav-top{
+    display: flex;
+    align-content: space-between;
+    padding: 15px 0px;
+}
+.nav-top .nav-img{
+    background-image: url(../img/lambda-black.png);
+    height: 40px;
+    width: 157px;
+}
+.nav-top a{
+    margin: 25px 40px 0px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-top a:hover{
+    animation: nav .5s linear 1 forwards;
+}
+header.main{
+    background-image: url(../img/jumbo.jpg);
+    height: 153px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+/* Top Content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +153,7 @@ p {
     padding-bottom: 20px;  
 }
 
+/* Middle Content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -101,10 +170,101 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
+/* Box Coloring */
+.middle-content .boxes .box1 {
+    width: 100px;
     height: 100px;
-    background: black;
+    background: teal;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box2 {
+    width: 100px;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box3 {
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box4 {
+    width: 100px;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box5 {
+    width: 100px;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box6 {
+    width: 100px;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box7 {
+    width: 100px;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box8 {
+    width: 100px;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box9 {
+    width: 100px;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-content .boxes .box10 {
+    width: 100px;
+    height: 100px;
+    background: dodgerblue;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -143,4 +303,132 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About Page Specific */
+header.about-page{
+    background-image: url(../img/jumbo-about.png);
+    height: 153px;
+    width: 100%;
+    margin-top: 15px;
+}
+div.main{
+    padding: 0px;
+}
+.about-main-top{
+    padding: 25px;
+    border-bottom: 1px dashed gray;
+}
+.about-main-mid{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+.about-main-mid div{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 350px;
+    padding: 15px 0px;
+    margin: 15px 10px;
+    border-bottom: 1px dashed gray;
+}
+.about-main-mid div h2{
+    margin-top: 5px;
+}
+.about-main-mid div img{
+    width: 100%;
+}
+.about-main-mid div a{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin-top: 5px;
+    color: black;
+    text-decoration: none;
+}
+.about-main-mid div a:hover{
+    animation: button 2.5s linear infinite alternate;
+}
+.bottom-about{
+    padding: 15px;
+}
+
+/* Contact Page */
+header.contact{
+    background-image: linear-gradient(-10deg, lightslategrey, lightcyan);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 20px 10px 20px grey;
+}
+header.contact h1{
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 30px 0;
+}
+.main.contact{
+    border-top: 1px dashed lightslategray;
+    border-bottom: 1px dashed lightslategray;
+    padding: 25px;
+    margin: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.main.contact div{
+    width: 45%;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 15px;
+    white-space: pre-line;
+    box-shadow: 20px 10px 20px grey;
+}
+.main.contact textarea{
+    margin: 5px 15px 0 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px inset;
+}
+.main.contact input{
+    margin: 5px 15px 0 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px 10px;
+    box-sizing: border-box;
+}
+.main.contact #comm{
+    height: 75px;
+    resize: none;
+}
+input, textarea{
+    box-shadow: 5px 7px 8px slategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div a{
+    color: slateblue;
+}
+address{
+    line-height: 1.25;
+    margin-left: 75px;
+    background-color: slategray;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+    border-radius: 5%;
+    box-shadow: 5px 10px 10px rgb(53, 53, 53);
+    text-shadow: 1px 1px 1px rgb(53, 53, 53);
+}
+.main.contact.end{
+    border-top: 0px;
+    text-align: center;
+}
+.main.contact.end h1{
+    font-size: 40px;
+    background-image: linear-gradient(10deg, lightcyan, lightslategray);
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px rgb(53, 53, 53);
 }
